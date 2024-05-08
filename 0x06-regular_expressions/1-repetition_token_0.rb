@@ -5,5 +5,5 @@
 # 'h' is followed by 'b', followed by one or more 't's, and ending with 'n'.
 # It then prints out all the matched occurrences.
 
-puts ARGV[0].scan(/hbt[2-5]n/).join
+puts ARGV[0].scan(/hbt{2-5}n/).join
 
