@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Script to retrieve and display all active IPv4 addresses on the machine.
+
+# Uses the 'ip' command to list IPv4 addresses and extracts them using 'awk' and 'cut'.
+ip -4 -o addr show | awk '{print $4}' | cut -d "/" -f 1
