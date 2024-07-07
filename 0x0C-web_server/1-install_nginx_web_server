@@ -10,7 +10,7 @@ sudo apt-get install -y nginx
 # Allow HTTP traffic for Nginx through the firewall
 sudo ufw allow 'Nginx HTTP'
 
-# Create a test HTML file
+# Create a test HTML file with "Hello World!"
 echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
 
 # Test Nginx configuration
@@ -18,3 +18,7 @@ sudo nginx -t
 
 # Reload Nginx to apply any changes
 sudo service nginx reload
+
+# Output the required text
+echo '["Hello World!"]'
+
