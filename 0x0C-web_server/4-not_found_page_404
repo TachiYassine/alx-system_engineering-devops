@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # This script configures a new Ubuntu machine to match the task requirements
 
 # Updating Packages before performing installations
